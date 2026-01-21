@@ -30,6 +30,11 @@ const bookSchema = new mongoose.Schema({
         type: Number,
         default: 0,
         required: [true, "Can't be blank"]
+    },
+    imageUrl: {
+        type: String,
+        required: true,
+        trim: true
     }
 }, {timestamps: true});
 

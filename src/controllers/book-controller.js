@@ -20,6 +20,7 @@ class BookController {
                 genres: req.body.genres,
                 pages: req.body.pages,
                 publishDate: req.body.publishDate,
+                imageUrl: req.body.imageUrl,
             });
             return res.status(StatusCodes.CREATED).json({
                 message: 'Successfully created the Book',
