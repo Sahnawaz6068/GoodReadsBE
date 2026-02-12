@@ -15,7 +15,7 @@ app.use('/api', apiRoutes);
 
 app.get('/home', (req, res) => {
     res.send('<h1>Home</h1>');
-})
+});
 
 const setupAndStartServer = function() {
     app.listen(PORT, async function() {
